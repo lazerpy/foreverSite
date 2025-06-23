@@ -8,7 +8,7 @@ import Context, { ShopContext } from "./context/ShopContext.jsx";
 import ShopContextProvider from "./context/ShopContext.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
   <ShopContextProvider>
    <App />
   </ShopContextProvider>
